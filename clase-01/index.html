@@ -5,52 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLASE 1</title>
+    <!-- Enlacé el HTML con el CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Le puse el favicon a la página -->
     <link rel="shortcut icon" href="./assets/4963logonucba.ico" type="image/x-icon">
+    <!-- Le agregue una nueva fuente de letras desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Stick+No+Bills:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Contenedor general, mediante id del div -->
     <div id="container">
-        <div id="header"><h1>Me Presento</h1>
-            <br>
-        <p>Me llamo Leonardo, vivo en Mendoza, trabajo en el rubro ventas hace 7 años, casi Abogado. Empecé a estudiar <span class="tb">programación de manera autodidacta en julio de este año,</span> siempre fuí fanático de la tecnología, hasta que este año decidí por fin estudiar lo que me apasiona!!! <span class="tb"> Soy amante del fútbol </span>y de los perritos.  </p></div>
+        <!-- Contenedor del header, mediante id del div -->
+        <div id="header">
+        <!-- Puse el h1 (titulo principal) -->
+            <h1>Me Presento</h1>
+        <!-- Agregue el p (parrafo descriptivo de mi persona), junto con la etiqueta "span" con su clase "tb" en algunas partes del texto para probar estilos de ver palabras, contraídas o alargadas -->
+            <p>Me llamo Leonardo, vivo en Mendoza, trabajo en el rubro ventas hace 7 años, casi Abogado. Empecé a estudiar <span class="tb"> programación de manera autodidacta en julio de este año,</span> siempre fuí fanático de la tecnología, hasta que este año decidí por fin estudiar lo que me apasiona!!! <span class="tb"> Soy amante del fútbol </span>y de los perritos.  </p></div>
+        <!-- Contenedor del section y aside, mediante id del div -->
         <div id="contenedor">
+        <!-- Contendor del section para la info personal, mediante id del div -->
             <div id="section">
+        <!-- Contenedor de los datos personales, mediante id del div -->
                 <div class="personal-information">
+        <!-- Puse etiqueta fieldset para darle un recuadro a mi info -->
                     <fieldset>
+        <!-- Puse etiqueta legend para poner el titulo al fieldset -->
                         <legend>Datos Personales:</legend>
+        <!-- Puse una lista desordenada con la clase "listas" -->
                         <ul class="listas">
-                            <br>
+        <!-- Puse todas las listas con su respectiva info -->
                             <li >NOMBRE: Leonardo Castro</li>
-                            <br>
-                          
                             <li >EDAD: 36</li>
-                            <br>
-                          
                             <li >FECHA DE NACIMIENTO: 10 de septiembre de 1985</li>
-                            <br>
-                            <li >CONTACTO: 2614685967</li>
-                            <br>
                             <li >EMAIL: leocastfig@icloud.com</li>
-                            <br>
                         </ul>
                     </fieldset>
                 </div>
+        <!-- Contenedor del section para la imagen, mediante id del div -->
                 <div class="picture">
+        <!-- Agregue imagen incluida en carpeta assets dentro de mi carpeta -->
                     <img  src="./assets/180232918_10225386440704686_4614300755425776284_n.jpeg" alt="">
                 </div>
             </div>
+        <!-- Contenedor aside, mediante id del div -->
             <div id="aside">
+        <!-- Agregue etiqueta video, con su respectivo tamaño, su clase controls (para que los botones) y la clase autoplay (para que comienzo solo el video al entrar a la pág) -->
                 <video width="270" height="300" controls autoplay>
+        <!-- Agregue la etiqueta source, y aguegue el acceso al video que tenia guardado en mi carpeta con sus clases src (ubicacion)y type(tipo de video) -->
                     <source src="./assets/IMG_2718.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
+        <!-- Contenedor del footer, mediante id del div -->
         <div id="footer"> 
+        <!-- Puse el h2 para el título -->
             <h2>REDES</h2>
+        <!-- Agregue una lista desordenada, con sus respectivas de las redes -->
             <ul>
+        <!-- Agregue las listas con las etiquetas "a"(para enlazar las URL de c/ red social) con las clase "target"(para que se abra en una pestaña aparte y no abandone mi pág), también la etiqueta "img" con la clase "src"(para enlazar la imagen de la red social que tenia guardada en mi carpeta), las clases "width" y "height"(para darle tamaño a las imágenes) y la clase "alt"(por si la pág no carga la imágen y dejamos una descripció de la imágen para darle accesibilidad)  -->
                 <li><a href=https://www.facebook.com/leonardo.castro.79677 target="_blank"><img src="./assets/facebook-logo-vector-original-último-color-azul-aislado-f-icono-para-la-aplicación-móvil-de-página-web-o-materiales-impresión-204672025.jpeg" width="45" height="45" alt="logo facebook"></a></li>
                 <li><a href="https://www.instagram.com" target="_blank"><img src="./assets/nuevo-logotipo-de-instagram-128373493.jpeg" width="45" height="45" alt="logo instagram"></a></li>
                 <li><a href="https://www.twitter.com" target="_blank"><img src="./assets/logotipo-twitter.png" width="45" height="45" alt="logo twitter"></a></li>
