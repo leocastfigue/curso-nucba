@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    letter-spacing: 2.5px;
+    word-spacing: 10px;
+}
+#container{
+    width: 900px;
+    height:700px;
+    background-color:aliceblue;
+    margin: 1em auto;
+    padding: 1em;
+}
+#header{
+    height: 25%;
+    background:antiquewhite;
+    border-radius: 1em;
+    margin: 1em;   
+    font-size: 1em;
+
+}
+#contenedor{
+    height: 53%;
+    background:azure
+}    
+#footer{
+    height: 15%;
+    background:lightgray;
+    border-radius: 1em;
+    margin: 1em; 
+
+}
+#section{
+    height: 100%;
+    width: 70%;
+    border-radius: 1em;
+    float: left;
+}
+#aside{
+    height: 100%;
+    width: 30%;
+    border-radius: 1em;
+    float: right;
+}
+.personal-information{
+    height: 100%;
+    width: 65%;
+    border-color: black;
+    float: right;
+    border-radius: 1em;
+    margin: 1%;
+}
+.picture img{
+    height: 100%;
+    width: 30%;
+    border-radius: 1em;
+}
+.listas{
+    text-align: left;
+    list-style: none;
+}
+#footer li{
+    display: inline-block;
+}
+#footer a{
+    padding: 10px;
+}
+.tb{
+    letter-spacing: 1px;
+}
+.tb:hover{
+    letter-spacing: 15px;
+}
+#header:hover{
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
+}
+#section:hover{
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
+}
+#aside:hover{
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
+}
+#footer:hover{
+    box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
+}
