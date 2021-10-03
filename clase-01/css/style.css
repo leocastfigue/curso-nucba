@@ -14,18 +14,17 @@
     background-color:aliceblue; /*le doy un color al fondo del contenedor*/
     margin: 1em auto; 
     padding: 1em; 
- 
 }
 /*Doy formato al header*/
-#header{
+header{
     height: 25%;
     background:antiquewhite; /*le doy valores generales fondo al contenedor, en este caso el color*/
     border-radius: 1em; /*le doy borde redondeado al contenedor*/
-    margin: 1em;   
+    margin: 1em;     
     font-size: 1em; /*le doy el tamaño de fuente a las letras*/
 }
 /*Doy formato al titulo del header*/
-#header h1{
+header h1{
     margin: 20px;
 }
 /*Doy formato al contenedor (que contiene el section y aside)*/
@@ -34,21 +33,21 @@
     background:azure
 }    
 /*Doy formato al footer*/
-#footer{
+footer{
     height: 15%;
     background:lightgray;
     border-radius: 1em;
-    margin: 1em; 
+    margin: 1em;
 }
 /*Doy formato al section*/
-#section{
+section{
     height: 100%;
     width: 70%;
     border-radius: 1em;
     float: left; /*hago "flotar", mover el contenedor, en este caso a la iaquierda*/
 }
 /*Doy formato al aside*/
-#aside{
+aside{
     height: 100%;
     width: 30%;
     border-radius: 1em;
@@ -81,11 +80,11 @@
     margin-bottom: 40px; /*le doy un margen inferior a las listas*/
 }
 /*Doy formato a las listas de las redes sociales*/
-#footer li{
+footer li{
     display: inline-block; /*ubico las imagenes una al lado de la otra*/
 }
 /*Doy formato a los iconos de las redes sociales*/
-#footer a{
+footer a{
     padding: 10px;
 }
 /*Doy formato a determinadas palabras en el header*/
@@ -97,22 +96,22 @@
     letter-spacing: 15px;
 }
 /*Doy formato de movimiento al header*/
-#header:hover{ /*le dooy movimiento al elemento cuando paso el cursor*/
+header:hover{ /*le dooy movimiento al elemento cuando paso el cursor*/
     box-shadow: 8px 8px 25px rgba(0,0,0,0.6); /*doy un sobreado a los contenedores cuando se muevan*/
     transform: translateY(-3%); /*le doy un moviento al elemento, en este caso hacia arriba cuando le paso con el cursor por encima*/
 }
 /*Doy formato de movimiento al section*/
-#section:hover{
+section:hover{
     box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
     transform: translateY(-3%);
 }
 /*Doy formato de movimiento al aside*/
-#aside:hover{
+aside:hover{
     box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
     transform: translateY(-3%);
 }
 /*Doy formato de movimiento al footer*/
-#footer:hover{
+footer:hover{
     box-shadow: 8px 8px 25px rgba(0,0,0,0.6);
     transform: translateY(-3%);
 }
