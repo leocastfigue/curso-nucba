@@ -1,0 +1,29 @@
+*{ 
+    /* hacemos esto para resetear los defectos del navegador */
+    margin: 0px; /*para eliminar los margenes de la página*/
+    padding: 0px;  /*establece el espacio de relleno requerido por todos los lados de un elemento*/
+    box-sizing: 0px; /*para establecer como se calcula el ancho y alto total de un elemento*/
+}
+body{
+background-image: linear-gradient(to right, yellow, red); /*es para crear una gradiente de colores, que empiece en un color y termine en otro, que lo fusione, tomando parametros dentro de los () 1ro la dirección, luego el colo1, luego color2*/
+    /* background-repeat: no-repeat;esto es para que no se repita una imagen por todo el canva */
+
+    /* background-repeat: repeat-x; */   /* la imagen se repite de forma horizontal */
+
+    /* background-repeat: repeat-y; */  /* la imagen se repite de forma vertical */
+    /* background-position: right; /*esto es para posicionar la imagen, en este caso a la izquierda-arriba, pero puede ser right, top, bottom(para abajo) */
+    /* background-attachment: fixed; para mover la imagen por toda la pantalla por mas que este completa de letras */
+    /* background-attachment: scroll;la imagen se queda estatica en su lugar */ 
+
+/* }
+h1, h2, h3{ se puede aplpicar estilos a selectores multiples, mediante la etiqueta y separados por coma  */
+    /* margin-top: 10px;
+    background-color: darkgoldenrod; 
+}*/
+/* .perritoSalchicha{ */
+    /* background-color: brown; 
+}
+/* .ballons{ es para hacer desaparecer el fondo blanco, para evitar photoshop, etc */
+    /* filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}

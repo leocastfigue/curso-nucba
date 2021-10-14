@@ -2,10 +2,54 @@
     margin: 0;
     padding: 0;
     background-color:antiquewhite;
+    color: beige;
+    text-align: ;
 }
 h1{
+    color: azure;
+    text-align: center;
     background-color: salmon;
+    
 }
-h2{
+.intro{
+    flex-wrap: wrap;
+    text-align: center;
     background-color: aquamarine;
+    font-style: italic;
+    border: 10px;
+    border-radius: 2px;
+    color:aliceblue;
+   
+}
+.prueba{
+    
+    text-align: center;
+    color: cadetblue;
+ 
+}
+.tomato{
+    background-color: tomato;
+}
+.orange{
+    background-color: orange;
+
+}
+.metalblue{
+    background-color: midnightblue;
+
+}
+.olivegreen{
+    background-color: olive;
+}
+.gray{
+    background-color: gray;
+}
+.rainbow{
+    background-color: rosybrown;
+}
+.violet{
+    background-color: blueviolet;
+}
+.lightgray{
+    background-color: lightgray;
 }
