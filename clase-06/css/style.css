@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper > * { /*el signo mayor crea una pseudoclase, hereda funcionalidades*/
+    padding: 10px;
+    flex: 1  100%; /*indica que el contenedor va a tomar toda la fila, y va a mandar el resto de los contenedores uno abajo de otro*/
+}
+.header{
+    background-color: violet;
+}
+.footer{
+    background-color: whitesmoke;
+}
+.main{
+    text-align: left;
+    background-color: deepskyblue;
+}
+.aside-1{
+background-color: gold;
+}
+.aside-2{
+background-color:green;
+}
