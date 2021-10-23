@@ -1,0 +1,65 @@
+/* primero aplicamos el diseño responsivo para los dispositivos moviles */
+* {
+    box-sizing: border-box;
+  }
+  .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;  
+    text-align: center;
+  }
+  .wrapper > *{
+    padding: 10px;
+    flex: 1 100%;
+  }
+  .header{
+    background-color:aquamarine;
+  }
+  .main{
+    background-color: burlywood;
+  }
+  .aside_1{
+    background-color: coral;
+  }
+  .aside_2{
+    background-color: deeppink;
+  }
+  .footer{
+    background-color: indigo;
+  }
+  /* GRID: Nuestro navegador se distribuye con un maximo de 12 columnas, si x ej le decimos que nos use un 25% de la pantalla, le tenemos que poner "col-3",  */
+  /* .header {
+    border: 1px solid red;
+    padding: 15px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  */
+  /* Primero aplicamos nuestro diseño para dispositivos moviles */
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  }
+  /* Los elementos que tengo que aplicar x defecto para que se comporte en desktop de una forma y en movil de otra forma, es decir como va a trabajar el Grid en el cleular, un elemento abajo de otro, PERO yo quiero que un elemento quede al lado del otro, en vez de uno al lado del otro, simplemente pegamos esta columna que esta abajo, y luego adaptamos el contenido a movil, las columnas se van a suporponer hasta que bajen porq no entran mas en el espacio de 3 */
+ 
+/* SI O SI TENGO QUE PONER PRIMERO UNA MEDIAQUERY PARA EL PADRE PORQUE SINO NO VA A FUNCIONAR LA MEDIAQUERY DE ABAJO */
+@media all and (min-width: 600px){
+  .aside {flex: 1 0 0;} /* esta es la clase padre para que despues la mediaquery de abajo  herede y pueda adaptarse*/
+}
+  
+
+/* las clases que definimos aca, les aplicamos determinados estilos tenemos que modificarlas para que se adpaten segun nuestra mediaquery */
+/* estamos metiendo Mediaquery, dentro de un Grid, usando Flexbox */
+/* ESTE ES PARA LOS HIJOS, XQ FLEXBOX HEREDA LAS PROPIEDADES Y DESPUES APLICA ESTA MEDIAQUERY */
+@media all and (min-width: 800px){
+  .main  {flex: 3.0px;}  
+  .aside_1  {order: 1;} 
+  .main     {order: 2;}   
+  .aside_2  {order: 3;}
+  .footer   {order: 4;}
+}

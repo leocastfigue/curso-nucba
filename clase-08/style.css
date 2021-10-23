@@ -1,0 +1,58 @@
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: green;
+    margin: 10px;
+    /* transition: width height 5s;  */ /* queremos transcicionar el ancho, y por 2 segundos */
+    /* transition: width, background 5s; */
+    /* tambien estas 2 propiedades se pueden poner en una misma linea de transition y lo q va hacer es que hace ambos movimientos en un solo momento */
+    /* transition-delay: 2s; tiene una demora para el comienzo de la transcicion */
+    position: relative; /* es para darle el movimiento a los elementos que le dimos movimiento y color con las "@keyframes"*/
+
+    animation-name: example; /* es para darle una animación, en este caso de color, a los elementos */
+    animation-duration: 4s; /* el tiempo que demora la animación */
+    animation-delay: 2s; /*le da  una demora a la animacion */
+    animation-iteration-count: 3 ó infinite; /* es para repetir la animacion las veces que le digamos o infinito y no para nunca */
+    animation-direction: reverse o alternate; /* es para darle la direccion de la animacion, o para que vaya alternando la animacion */
+}
+/* para que la animaciono se mueva el bloque con todos los elementos usamos FLEXBOX */
+.flex-container{
+    display: flex; 
+}
+
+/*
+#div1{transition-timing-function: linear;} /* va cambiando el color, pero lento */
+/* #div2{transition-timing-function: ease;} el cambio de color es mas rapido  */
+/* #div3{transition-timing-function: ease-in;} el cambio de color es mas rapido que el anterior  */
+/* #div4{transition-timing-function: ease-out;} el cambio de color es mas rapido  */
+
+/* usamos un subselector, que hereda las propiedades */
+/* para que se activen cuando scrolleamos, es con el ":hover" */
+/* div:hover{
+    width: 300px;
+    height: 300px;  
+    background: red;
+} */
+
+/* Son puntos llaves, para definir animacione (conj de transciciones. Si nosotros queremos animar los "div" tenemos que poner en CSS en el selector "div" declaramos la propiedad "animation-name"(dentro de este le ponemos un nombre que luego lo vamos a usar en key frames) y "animation-duration". Luego ponemos "@keyframes" mas el nombre q usamos en "animation-name" y ponemos propiedades desde y hasta, ("from" y "to"), es la forma mas amigable PERO MAS INCORRECTA DE HACERLA */
+/* @keyframes example{
+    from{background-color: red;}
+    to{background-color: yellow;}
+} */
+/* LA FORMA CORRECTA DE HACERLO ES CON NUMEROS DUROS, y las animaciones mientras lentas son, mas amigables son, quedan mejor. Y las animaciones empiezan y temrminan, por eso se le pone "animation-duration" */
+/* @keyframes example{
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: tomato;}
+    75%  {background-color: blueviolet;}
+    100% {background-color: turquoise;}
+} */
+
+@keyframes example{
+    0%   {background-color: red; left: 0px; top: 0px;}
+    25%  {background-color: yellow; left: 200px; top: 0px;}
+    50%  {background-color: tomato; left: 200px; top: 200px;}
+    75%  {background-color: blueviolet; left: 0; top: 200px;}
+    100% {background-color: turquoise; left: 0px; top: 0px;}
+}
